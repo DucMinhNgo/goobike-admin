@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2>About</h2>
+        <h2>Product</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, incidunt laboriosam? Placeat cupiditate architecto iusto laborum maiores ipsam laudantium? Pariatur?</p>
     </div>
 </template>
