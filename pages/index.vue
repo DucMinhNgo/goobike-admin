@@ -1,5 +1,16 @@
 <template>
     <div>
+        <header>
+            <nav>
+                <ul>
+                    <li><NuxtLink to="">Home</NuxtLink></li>
+                    <li><NuxtLink to="/about">About</NuxtLink></li>
+                    <li><NuxtLink to="/products">Products</NuxtLink></li>
+                </ul>
+                <a href="/about">normal link about page</a>
+            </nav>
+        </header>
+
         <h2>Home</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, incidunt laboriosam? Placeat cupiditate architecto iusto laborum maiores ipsam laudantium? Pariatur?</p>
     </div>
