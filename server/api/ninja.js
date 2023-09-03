@@ -5,11 +5,11 @@ export default defineEventHandler(async (event) => {
     // handle post data
     const body = await readBody(event);
 
-    return {
-        message: `Hello ${name}! Your are ${body.age} years old`
-    }
+    // return {
+    //     message: `Hello ${name}! Your are ${body.age} years old`
+    // }
 
-    // const { data } = await $fetch('https://api.currencyapi.com/v3/latest?apikey=eJdPhICJUDBt6B4e4IX6DZ4A9Xos4Z2JRZ8xh2v2')
+    const { data } = await $fetch('https://api.currencyapi.com/v3/latest?apikey=cur_live_q8pzjASaqHPXWW4plDTauxhVQBC1bVxxBp81xI9q')
 
-    // return data
+    return data
 })
