@@ -1,21 +1,27 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: [
-    '@nuxtjs/tailwindcss',
-  ],
+  components: {
+    dirs: ["~/components"],
+  },
+  modules: ["@nuxtjs/tailwindcss", "@ant-design-vue/nuxt"],
   app: {
     head: {
-      title: 'Nuxt Dojo',
+      title: "Goobike",
       meta: [
-        { name: 'description', content: 'Everything about Nuxt 3' }
+        { name: "description", content: "Ứng dụng đặt xe hàng đầu việt nam" },
       ],
       link: [
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' }
-      ]
-    }
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/icon?family=Material+Icons",
+        },
+      ],
+    },
   },
+  antd: {},
   runtimeConfig: {
-    currencyKey: process.env.CURRENCY_API_KEY
-  }
-})
+    currencyKey: process.env.CURRENCY_API_KEY,
+  },
+  plugins: [{ src: "~/plugins/lottie-player.js", mode: "client" }],
+});
